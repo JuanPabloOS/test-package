@@ -1,0 +1,22 @@
+{
+  "name": "@juanpabloos/test-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanPabloOS/test-package.git"
+  },
+  "author": "Juan Olvera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanPabloOS/test-package/issues"
+  },
+  "homepage": "https://github.com/JuanPabloOS/test-package#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
