@@ -1,10 +1,12 @@
 {
-  "name": "@juanpabloos/test-package",
+  "name": "@jpoes/test-package",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo testing"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,22 @@
     "url": "https://github.com/JuanPabloOS/test-package/issues"
   },
   "homepage": "https://github.com/JuanPabloOS/test-package#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "rollup": "^2.40.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
